@@ -5,7 +5,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Login = () => {
-  const { backendUrl, token, setToken } = useContext(AppContext);
+  const { token, setToken } = useContext(AppContext);
+  const backendUrl = "http://localhost:4000";
   const navigate = useNavigate();
   const [state, setState] = useState("Sign Up");
   const [name, setName] = useState("");
